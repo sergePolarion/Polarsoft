@@ -16,7 +16,7 @@ var JavaPackages = new JavaImporter(java.io,
     com.polarion.platform.jobs);
 with(JavaPackages) {
 
-var SCRIPT_TITLE = "Debug Message"
+var SCRIPT_TITLE = "Scripting Debug Message"
 function log_debug(addTitle, msg) {
   com.polarion.core.util.logging.Logger.getLogger(SCRIPT_TITLE + " " + addTitle).info(msg);
 }
