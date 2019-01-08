@@ -1,7 +1,7 @@
 /*
 **	function:	Add  selected users from Custom Fields as Signers
 **				On Workflow Transition, Users listed in a LiveDoc custom field "redacteur" are added as signers for Electronic Signatures
-** Written By:	  Serge Dubois , Polarsoft :))
+** Written By:	  Serge Dubois , from Polarsoft :))
 **
 */
 var JavaPackages = new JavaImporter(java.io,
