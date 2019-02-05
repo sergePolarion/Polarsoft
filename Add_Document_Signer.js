@@ -44,7 +44,7 @@ var minOne= workflowSignatures.size() - 1;
 var workflowSignature = workflowSignatures.get(minOne);
 
 var approvers=theDoc.getCustomField('redacteur');
-
+out.write("Document approvers " + approvers ); out.newLine(); out.flush();
 for (var i = 0; i < approvers.size(); i++)
 {
 	var app=approvers.get(i);
