@@ -1,5 +1,5 @@
 /*
-**	function:	Add  selected users as Approver
+**	function:	Add  desired selected users as Approver
 **
 ** Written By:	Serge Dubois
 **
