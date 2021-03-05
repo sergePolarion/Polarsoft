@@ -27,7 +27,7 @@ var IProjectService = trackerService.getProjectsService();
 var securityService = trackerService.getDataService().getSecurityService();
 var currentUser = securityService.getCurrentUser();
 var wiAuthor = workitem.getAuthor().getId();
-var approvee=workitem.getCustomField('signer');
+var approvee=workitem.getCustomField('approvers');
 
 for (var i = 0; i < approvee.size(); i++)
  {
