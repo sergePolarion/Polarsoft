@@ -3,7 +3,7 @@
 
   Job Script used to automate document status change based on signatures
 
-	Jean-François Thibeault
+	Serge Dubois
 
   Job Configuration:
 
