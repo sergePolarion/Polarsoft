@@ -4,7 +4,7 @@
 * Description : This Script is a workflow script for document. It will read the value of custom field from document and create a document baseline
 *
 * Author: 
-* Version 20200731
+* Version 20230610
 *           - Renaming the script to createDocumentBaselineWF
 *           - Adding BASASELINENAME, BASASELINEDESCRIPTION and BASASELINENAMEPREFIX workflow parameters
 *           - Using createObjectBaselineForChange for creating the baseline on new revision being created
@@ -18,7 +18,7 @@ var BASASELINEDESCRIPTION = "baselineDescription";
 var BASELINE_NAME_CF = "cf_baseLineName";
 var BASELINE_DESCRIPTION_CF = "cf_baseLineDescription";
 
-// Load required Java Packages (Compatible with Java 7 & 8)
+// Load required Java Packages (Compatible with Java 7 & 8 & Java 17 )
 var JavaPackages = new JavaImporter(java.io,
                             java.text,
                             java.lang,
