@@ -3,6 +3,7 @@
 **
 ** Written By:	Serge Dubois
 **
+** updated june 23: variabilization approver field
 */
 var JavaPackages = new JavaImporter(java.io,
     java.text,
@@ -23,11 +24,11 @@ function log_debug(addTitle, msg) {
 var workitem = workflowContext.getWorkItem();
 var trackerService = workflowContext.getTrackerService();
 var IProjectService = trackerService.getProjectsService();
-
+var  approverfield= "approvers";
 var securityService = trackerService.getDataService().getSecurityService();
 var currentUser = securityService.getCurrentUser();
 var wiAuthor = workitem.getAuthor().getId();
-var approvee=workitem.getCustomField('approvers');
+var approvee=workitem.getCustomField( approverfield);
 
 for (var i = 0; i < approvee.size(); i++)
  {
